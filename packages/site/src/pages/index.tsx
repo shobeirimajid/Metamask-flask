@@ -13,6 +13,7 @@ import {
   ReconnectButton,
   SendHelloButton,
   Card,
+  ShowNotificationsButton,
 } from '../components';
 
 const Container = styled.div`
@@ -189,7 +190,7 @@ const Index = () => {
             description:
               'Display a custom message within a confirmation screen in MetaMask.',
             button: (
-              <SendHelloButton
+              <ShowNotificationsButton
                 onClick={handleSendHelloClick}
                 disabled={!state.installedSnap}
               />
